@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<p>Welcome to your new app.</p>
+
+<MudMenu>
+    <ActivatorContent>
+        <MudButton Variant="Variant.Filled" OnClick="@context.ToggleAsync">Mud Menu</MudButton>
+    </ActivatorContent>
+    <ChildContent>
+        <MudMenuItem Href="/Home/Page1" Label="Page1" />
+        <MudMenuItem Href="/Home/Page2" Label="Page2" />
+    </ChildContent>
+</MudMenu>
